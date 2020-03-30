@@ -1,0 +1,58 @@
+
+<!-- 
+Rational KenKen copyright Nathan Lipiarski 2019
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rational Ken Ken</title>
+	<link rel="icon" type="image/png" href="KenKen.png" />
+	<link rel="stylesheet" type="text/css" href="rationalkenken.css" />
+	<script src="Fraction.js"></script>
+	<script src="Cell.js"></script>
+	<script src="Group.js"></script>
+	<script src="Grid.js"></script>
+	<script src="rationalkenken.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Rational Ken Ken</h1>
+		<h2>Created by Nathan Lipiarski</h2>
+	</header>
+	<main>
+		<div id="gridHolder" class="hidden"></div>
+		<section id="grid-options">
+			<span id="grid-size-label">Grid size:</span>
+			<select id="grid-size">
+				<option>2</option>
+				<option selected="true">3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+				<option>10</option>
+			</select>
+			<button id="new-grid">New Grid</button>
+			<button id="clear-grid">Clear Grid</button>
+			<button id="validate">Check Solution</button>
+		</section>
+		<section id="instructions">
+			<h3>How to Play</h3>
+			<p>Rational KenKen is based off of regular KenKen which in turn is
+				very similar to Sudoku.  Like in Sudoku, in each row and column
+				each number can only appear once as a numerator and once as a
+				denominator. Unlike Sudoku, the cells are not grouped in 
+				squares. The groups of cells are bounded by a thicker border and
+				have a target fraction and an operation.</p>
+
+			<p>The goal is to have all the fractions in each group add, 
+				subtract, multiply, or divide to be the certain number while 
+				mainting the restrictions on the numerators and denominators 
+				from above.  For division and subtraction, the bigger number is 
+				always the first operand.</p>
+		</section>
+	</main>
+</body>
+</html>
